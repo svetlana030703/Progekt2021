@@ -1,2 +1,2 @@
-# Progekt2021
+# Progect2021
 Python
