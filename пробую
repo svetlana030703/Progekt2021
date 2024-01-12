@@ -1,0 +1,14 @@
+for n in range(3, 100001):
+ S = '5' + '2' * n
+ while '52' in S or '2222' in S or '1122' in S:
+  if '52' in S:
+   S = S.replace ('52', '11',1)
+  if '2222' in S:
+   S = S.replace ('2222', '5',1)
+  if '1122' in S:
+   S = S.replace ('1122', '25')
+ sum_S = 0
+ for i in S:
+  sum_S += int(i)
+ if sum_S == 64:
+  print(n)
